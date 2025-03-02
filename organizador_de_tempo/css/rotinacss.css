@@ -1,0 +1,608 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Jersey+10&family=Matemasie&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Anton&family=Bebas+Neue&family=Jersey+10&family=Matemasie&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;700&display=swap');
+*{
+
+    Box-sizing: border-box;
+    
+    }
+    
+
+div.barra{
+    position: fixed;
+    top: 0;
+    left: 0;
+    padding: 25px;
+    display: flex;
+    flex-wrap:wrap;
+    justify-content:space-between;
+    background-color:rgb(37 51 64);
+    opacity: 0.9;
+    height: 40px;
+    width: 100%;
+    align-content: center;
+   
+}
+
+div.barra a{
+   /* font-family: "Bebas Neue", sans-serif;
+    font-weight: 600;
+    font-style: normal;*/
+    display: grid;
+    font-family: "Anton", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    text-decoration: none;
+    letter-spacing: 2px;
+    color: black;
+    background-color: rgb(47, 188, 248);
+    background-size: cover;
+    text-align: center;
+    font-size: 15px;
+    flex: 1;
+    margin: 60px;
+    padding: 5px;
+    border-radius: 10px;
+}
+
+a:hover {
+opacity: 0.7;
+color: azure !important;
+transition: all 0.5s ease;
+
+}
+
+div.bola1{
+position: absolute;
+ display: flex;
+width: 50px;
+height: 50px;
+ top: 60px;
+ background-color:rgb(19, 176, 243);
+ border-radius: 100%;
+ margin: 1px 10px;
+ align-content: center;
+ align-items: center;
+ justify-content: center;
+text-align: center;
+border: 0.1em solid rgb(19, 176, 243);
+box-shadow: 0 0 3px rgb(19, 176, 243);
+}
+
+div.bola1 a{ 
+
+    color: rgb(0, 0, 0);
+    display: flex;
+    background: none;
+    text-decoration: none;
+    text-transform: capitalize;
+    font-size: 65px;
+    position: relative;
+    Line-height: 0.12;
+    bottom:7px;
+   
+}
+
+.bola1:hover {
+    opacity:0.8 ;
+}
+div.bola2 a{
+    position: absolute;
+     flex-wrap: wrap;
+     justify-content: center;
+     display: flex;
+     width: 50px;
+     height: 50px;
+     top: 60px;
+     background-color:rgb(19, 176, 243);
+     border-radius: 100%;
+     margin: 1px 10px;
+     right: 0%;
+     flex-direction: column;
+     justify-items: center;
+     text-align: center;
+     align-content: center;
+     align-items: center;
+     border: 0.1em solid rgb(19, 176, 243);
+     box-shadow: 0 0 3px rgb(19, 176, 243);
+    }
+    div.bola2 div.cabeca{
+        display: flex;
+        padding:8px ; 
+        top:8px;
+        left:17px;
+        border-radius: 100%;
+        background: rgb(0, 0, 0);
+        position: absolute;
+        width: 1px;
+    
+    }
+    div.bola2 div.corpo{
+        padding:8px;
+        width: 30px;;
+        border-radius: 100%;
+        background: rgb(0, 0, 0);
+        position: relative;
+        top:10px;
+        
+    }
+/*bola do perfil e das configs*/
+    .bola2:hover .corpo  {
+        background-color:rgb(224, 224, 224); 
+    }
+
+    .bola2:hover .cabeca  {
+        background-color:rgb(224, 224, 224); 
+    }
+    .bola1:hover .t1{
+    color:rgb(255, 255, 255);
+    }
+/**/
+    body{
+        background-image:url(/img/fundo_relogio.jpg) ;
+        background-size:cover;
+        overflow-x: hidden;
+    }
+    div.transparente{
+       display:flex;
+        position: absolute;
+        background-color:rgb(99, 99, 99) ;
+        padding: 125px;
+        opacity: 0.5;
+        bottom: 5%;;
+        right: 2%;
+        left: 2%;
+        height: 20%;
+        align-items: center;
+       justify-content:space-between;
+       box-shadow: 9px 9px 9px  black;
+       border-radius: 9px;
+       transition: 0.6s ease;
+
+     
+    }
+
+    div.card{
+        display:grid;
+        background-image: url('/img/fundo_relogio.jpg');
+        border-radius:10px;
+        flex-grow: 1;
+        border:3px solid;
+        text-align: center;
+       justify-content: center;
+       margin: 1%;
+       padding: 5%;
+       box-shadow: 9px 9px 15px black;
+    
+    }
+ div.card a{
+   
+    opacity: 1.0;
+    letter-spacing: 3px;
+    font-size:30px;
+    text-decoration: none;
+    color:hsl(0, 0%, 100%);
+    text-shadow: 2px 5px 3px rgb(0, 0, 0);
+ 
+ }
+ .card:hover{
+    filter:grayscale(100%);
+    transition: 0.1s ease;
+    padding: 5.2%;
+ }
+div.menu{
+display:flex;
+position:absolute;
+width: 16em;
+top:3em;
+left:0;
+bottom:0;
+z-index: 1;
+background-color: rgb(19, 176, 243);
+transform: translateX(-100%);
+transition:  0.5s ease;
+flex-direction:column;
+justify-content: space-around;
+align-items: center;
+}
+button.opcao{
+    display:flexbox;
+    width: 80%;
+    padding: 13px;
+    top: 20%;
+    border-radius: 20px;
+    font-size: 140%;
+}
+button.opcao1{
+    display:flexbox;
+    padding: 15%;
+    top: 20%;
+    border-radius: 100%;
+    
+}
+div.perfil{
+    display:flex;
+    position:absolute;
+    width: 16em;
+    top:3em;
+    right: 0;
+    bottom:0;
+    z-index: 1;
+    background-color: rgb(19, 176, 243);
+    transform: translateX(100%);
+    transition:  0.5s ease;
+    flex-direction:column;
+    justify-content: space-around;
+    align-items: center;
+    
+    }
+    .foto{
+        background-color: aliceblue;
+        border-radius: 100%;
+        padding: 20%;
+        margin: 1px;
+        background-image: url(/img/perfil.webp);
+        background-size: cover;
+        background-position: center;
+        border:0.2em rgb(37 51 64) solid ;
+        
+    }
+    a.voltar{
+        position: absolute;
+        padding: 0.8em 2em;
+        background: rgb(19, 176, 243);
+        border-radius: 1em;
+        border: black solid 0.1em;
+        text-decoration: none;
+        color: black;
+        align-content:center;
+        bottom: 1em;
+        right:1em;
+        transform: translateX(130%);
+        transition: 0.4s ease;
+    }
+
+
+    div.quadrado_criar{
+      top: 0;
+      left: 0;
+      display: flex;
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      z-index: -1;
+      justify-content: center;
+      align-items: center;
+    }
+
+    div.criar{
+        display: flex;
+        flex-direction: column;
+        position: absolute;
+        height:25em;
+        min-height:22em;
+        max-width:35em;
+        min-width:25em;
+        backdrop-filter:blur(100%);
+        background-color: rgb(19, 176, 243);
+        border-radius: 1%;
+        border: 0.1em solid rgb(0, 0, 0);
+        transform: translateX(-260%);
+        transition: all 0.5s ease;
+        margin-top:25px;
+           
+    }
+
+    input[type="text"]{
+        text-decoration: none;
+        font-style: italic;
+        font-weight:bold;
+        position: absolute;
+        top:13%;
+        right: 5%;
+        left: 5%;     
+        color: black;
+        text-align: center;   
+        transition: all 0.3s ease;
+        border: #ddd 2px solid;
+        border-radius:0.3em ;
+    }
+   
+    input[type="text"]:focus {
+        border-color:rgb(1, 2, 2);
+        box-shadow: 0 0 8px rgb(2, 3, 3);
+        outline: none; /* Remove a borda de foco padrão */
+      }
+
+    input[type="time"].Tinicial{
+    font-style: italic;
+    font-weight:bold;
+    color: black;
+    position: absolute;
+    left: 5%;
+    right: 5%;
+    top:27%;
+    text-align: center;
+    border: 2px solid #ddd;
+    border-radius: 0.3em;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    }
+
+    input[type="time"].Tfinal{
+        font-style: italic;
+        font-weight:bold;
+        color: black;
+        position: absolute;
+        left: 5%;
+        right: 5%;
+        top:41%;
+        text-align: center;
+        border: 2px solid #ddd;
+        border-radius: 0.3em;
+        cursor: pointer;
+        transition: all 0.3s ease;
+        }
+    
+      input[type="time"]:focus {
+        border-color:rgb(0, 0, 0);
+        box-shadow: 0 0 8px rgb(0, 0, 0);
+        outline: none; /* Remove a borda de foco padrão */
+      }
+    
+    .Ntarefas{
+    position: absolute;
+    top: 4%;
+    left: 5%;
+    color:rgb(0, 0, 0);
+    font-style: italic;
+    font-weight:bold;
+    text-shadow: 2px 3px 10px rgb(255, 255, 255);
+    
+   
+    }
+    .Htarefas{
+        position: absolute;
+        top: 17%;
+        left: 5%;
+        color:black;
+        font-style: italic;
+        font-weight:bold;
+        text-shadow: 2px 3px 10px rgb(255, 255, 255);
+        }
+
+        .Ftarefas{
+            position: absolute;
+            top: 31%;
+            left: 5%;
+            color:black;
+            font-style: italic;
+            font-weight:bold;
+            text-shadow: 2px 3px 10px rgb(255, 255, 255);
+            }
+
+        .dias{
+            position: absolute;
+            display: flex;
+            justify-content: space-around;
+            left: 0;
+            right: 0;
+            bottom: 42%;   
+            height: 0.9em;
+        }
+
+        .dias label{
+            font-style: italic;
+            font-weight: bold;
+            text-shadow: -1px -2px 10px white;
+            font-size:larger;
+            margin-bottom: 6%;
+            
+        }
+
+        .dias input[type="checkbox"]{
+            font-style: italic;
+            font-weight: bold;
+            text-shadow: 2px 3px 10px white;
+            margin-top: 8%;
+            appearance:none;
+            border-radius: 100%;
+            border: 0.54em solid rgb(255, 255, 255);
+            text-decoration: solid black;
+             
+        }
+        input[type="checkbox"]:checked {
+            border-color: rgb(0, 0, 0);
+            box-shadow: 0 0 9px rgb(0, 0, 0);
+          }
+
+          div.botao_ok{
+            position: absolute;
+            background: green;
+            display: flex;
+            bottom: 10%;
+            left: 35%;
+            right: 35%;
+            border-radius: 0.8em;
+            justify-content: space-around;
+            border: green solid 0.1em ;
+            align-items: center;
+            transition: all 0.1s ease;
+
+          }
+          div.botao_ok:hover{
+            border: green solid 0.1em ;
+            box-shadow: 0 0 5px green;
+            transform:translatey(0.1em);
+
+          }
+          p.confirmar{
+            font-weight: bold;
+            color: white;
+            font-style: italic;
+
+          }
+
+          p.inco_confirmar{
+            color:white;
+            border: #ddd;
+            text-decoration: white
+
+          }
+
+          div.quadradoRotina{
+           display: flex;
+            flex-direction: column;
+            position:fixed;
+            top: 16%;
+            bottom: 0;
+            left: 0%;
+            padding: 1% 7%;
+            overflow-y:hidden;
+            overflow-x: hidden;
+            align-items: center;
+            transition: all 0.3s ease;
+            align-items: center;
+            visibility: hidden;     
+           
+          }
+
+          .quadradoRotina:hover{
+            overflow-y:auto ;
+          }
+
+          .quadradoRotina::-webkit-scrollbar {
+            width: 2em;
+            width: 0.6em;
+           
+          }
+          .quadradoRotina::-webkit-scrollbar-thumb {
+            
+            border-radius: 8em;
+            background: rgb(19, 176, 243);
+            padding: 1em;
+          }
+
+
+          div.rotinaFeita{
+           display:flex;
+           position: relative;
+            align-items: center;
+            justify-content: center;
+            font-weight: bold;
+            font-style: italic;
+            background:  rgb(19, 176, 243);
+            border-radius: 1em;
+            margin: 0.5em;
+            right:15%;
+            width: 16em;
+            height: 3.5em; 
+            transition: all 0.5s ease;
+            transform: translatex(-140%);
+            font-family:Arial, Helvetica, sans-serif;
+          }
+
+          .rotinaFeita:hover{
+            scale: 1.03;
+            cursor: pointer;
+            box-shadow: 0.1em 0.1em 0.6em rgb(0, 0, 0);
+          }
+          div.rotinaEdit{
+     
+            position:absolute;
+            display: flex;
+            flex-direction: column;
+           position: absolute;
+            border-radius: 100%;
+            top: 0;
+            right: 0.4em;
+            text-transform: uppercase;
+            font-style:italic;
+            border-radius: 1px;
+            justify-content:space-around;
+            height: 100%;
+            right: 2%;
+            z-index:-1 ;
+    
+          }
+        
+          div.editar{
+            position: absolute;
+            font-size:0.9em;
+            background:rgb(200, 255, 0);
+            padding: 0.2em;
+            border-radius: 0.3em;
+            backdrop-filter:brightness(100%);
+            box-shadow:0.1em 0.1em 1em rgb(200, 255, 0) ;
+            transition:all 0.3s ease;
+            font-style: normal;
+            top:0;
+            opacity: 0;
+            z-index: -1;
+            cursor:pointer;
+     
+          }
+          div.excluir{
+           font-style: normal;
+           position: absolute;
+           bottom:0.1em;
+           font-size: 0.9em;
+           background:rgb(255, 0, 0);
+           padding: 0.2em;
+           border-radius: 0.3em;
+           backdrop-filter:brightness(100%);
+           box-shadow:0.1em 0.1em 1em rgb(255, 0, 0);
+           opacity: 0;
+           transition:all 0.3s ease;
+           bottom: 0;
+           cursor:pointer;
+           z-index:1;
+          }
+          .rotinaFeita:hover .editar{
+            transform: translate(50%);
+            visibility: visible;
+            opacity: 100%;
+            
+           }
+           .rotinaFeita:hover .excluir{
+             transform: translate(50%);
+             visibility: visible;
+             opacity: 100%;
+            }
+            .nome_da_rotina{
+              font-size: 1em;
+              color: rgb(0, 0, 0);
+              margin-bottom: 5em;
+              text-align: center;
+              top: 0;
+              transition: all 0.5 ease;
+            }
+            div.icon_rotina{
+              position: absolute;
+              font-size:0.9em;
+              background:rgb(200, 255, 0);
+              padding: 0.2em;
+              width: 2em;
+              right: 0;
+              top: 0;
+              border: solid 0.1em;
+              border-right: none;
+              border-top: none;
+            }
+ /*espaço para o botão de editar rotina*/       
+       
+        
+      
+          
+          
+
+          
+
+        /*❌ vou precisar*/
+      
+
+
+        
+    
+

@@ -1,0 +1,119 @@
+<!DOCTYPE html> 
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> TIMEOUT </title>
+</head>
+<body  >
+    <link REL="stylesheet" href="/css/rotinacss.css">
+
+    <div class="barra">
+        <a href="#" botao onclick="maisRotina()">+Rotina</a>
+        <a href="#" botao> +Metas</a>
+        <a href="#" botao> Cronômetro</a>
+        <a href="#" botao> Progresso </a> 
+    </div>
+    <div>
+        
+    </div>
+    <div id="confg" class="bola1"onclick="openNav()">
+        <a href="#" class="t1" >- - -</a>
+    </div>
+
+    <div class="menu" onclick="closeNav()"  >
+<br><br>
+<button class="opcao">Planejamento</button >
+<button class="opcao" >Calendário</button>
+<button class="opcao ">Música/ON</button>
+<button class="opcao">Layout</button>
+<button class="opcao">Feedback</button>
+
+    </div>
+
+    <div class="perfil"  onclick="closeNavPerfil()"  >
+        <div class="foto"></div>
+        <button class="opcao">Conta</button >
+        <button class="opcao" >Configurações</button>
+        <button class="opcao">Sobre</button>
+        <button class="opcao">Sair</button>
+        
+            </div>
+    
+    <div class="bola2" onclick="openNavPerfil()">
+        <a href="#">
+            <div class="cabeca"> </div>
+            <div class="corpo"> </div>
+        </a>
+       
+    </div>
+<div class="transparente">
+    <div class="card">
+       <a href="#">Rotina</a>
+    </div>
+    <div class="card" onclick="">
+        <a href="#">Desempenho</a>
+    </div>
+    <div class="card" onclick="">
+        <a href="#">Metas</a>
+
+    </div>
+</div>
+<a class="voltar" href="#" onclick="inicio()" >Menu</a>
+
+<form action="" class="criado">
+    <DIV class="quadrado_criar">
+        
+        <div class="criar">
+            <p class="Ntarefas">Nome da tarefa:</p>
+            <input type="text" class="name" placeholder="nome" autocomplete="off" required>
+           <p class="Htarefas">Hora da tarefa:</p>
+        
+            <input input type="time" class="Tinicial" autocomplete="on" placeholder="horas" required> 
+            
+            <p class="Ftarefas">Fim da tarefa:</p>
+        
+            <input input type="time" class="Tfinal" autocomplete="on" placeholder="horas" required>
+        
+                <div class="dias">
+                    <input class="checkbox" type="checkbox" id="domingo" name="dias_s" value="0">
+                    <input class="checkbox" type="checkbox" id="segunda" name="dias_s" value="1">
+                    <input class="checkbox" type="checkbox" id="terca"   name="dias_s" value="2">
+                    <input class="checkbox" type="checkbox" id="quarta"  name="dias_s" value="3">
+                    <input class="checkbox" type="checkbox" id="quinta"  name="dias_s" value="4">
+                    <input class="checkbox" type="checkbox" id="sexta"   name="dias_s" value="5">
+                    <input class="checkbox" type="checkbox" id="sabado"  name="dias_s" value="6">
+                
+                </div>
+        
+                <div class="dias">
+                    <label for="domingo">D</label>
+                    <label for="segunda">S</label>
+                    <label for="terca">T</label>
+                    <label for="quarta">Q</label>
+                    <label for="quinta">Q</label>
+                    <label for="sexta">S</label>
+                    <label for="sabado">S</label>
+                </div>
+        
+                
+        
+                <div class="botao_ok" >
+                    <p class="confirmar">confirmar </p>
+                    <p class = "inco_confirmar">✔️</p>
+                </div>
+        
+            </div>
+         
+         </div>
+
+
+    </DIV>
+ 
+
+ <div class="quadradoRotina"></div>
+</form>
+<script src="javascript.js"></script>
+</body>
+
+</html> 
