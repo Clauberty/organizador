@@ -22,7 +22,7 @@ div.barra{
     height: 40px;
     width: 80%;
     align-content: center;
-    background-color: rgba(116, 116, 116, 0.103);
+    background-color: rgba(19, 176, 243, 0.164);
     backdrop-filter: blur(10px);
     -webkit-backdrop-filter: blur(10px);
     border-radius: 10px;
@@ -35,7 +35,7 @@ div.barra{
   position: absolute;
   width: 100%;
   height: 100%;
-  background-color: rgba(10, 1, 58, 0.212);
+  background-color: rgba(49, 33, 2, 0.308);
   z-index: -1;
 }
 
