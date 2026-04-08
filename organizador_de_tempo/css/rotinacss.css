@@ -10,40 +10,61 @@
     
 
 div.barra{
-    position: fixed;
-    top: 0;
     left: 0;
-    padding: 25px;
+    right: 0;
+    margin: auto;
+    position: fixed;
+    top: 10px;
+    left: 0;
     display: flex;
     flex-wrap:wrap;
     justify-content:space-between;
-    background-color:rgb(37 51 64);
-    opacity: 0.9;
     height: 40px;
-    width: 100%;
+    width: 80%;
     align-content: center;
+    background-color: rgba(116, 116, 116, 0.103);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    border-radius: 10px;
+    border: 1px solid rgb(19, 176, 243);
    
+}
+.filtro{
+  top: 0;
+  left: 0;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(10, 1, 58, 0.212);
+  z-index: -1;
+}
+
+.fundo{
+  background-image:url(/img/fundo.png) ;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  z-index: -2;
+  background-size:cover;
+  overflow-x: hidden;
+  background-position-x:-10 ;
+  background-position-y:50% ;
+  
 }
 
 div.barra a{
-   /* font-family: "Bebas Neue", sans-serif;
-    font-weight: 600;
-    font-style: normal;*/
+   font-family: 'Poppins', sans-serif;
     display: grid;
-    font-family: "Anton", sans-serif;
-    font-weight: 400;
-    font-style: normal;
     text-decoration: none;
-    letter-spacing: 2px;
-    color: black;
-    background-color: rgb(47, 188, 248);
-    background-size: cover;
+    color: rgb(255, 255, 255);
     text-align: center;
     font-size: 15px;
     flex: 1;
     margin: 60px;
-    padding: 5px;
     border-radius: 10px;
+    
 }
 
 a:hover {
@@ -58,35 +79,42 @@ position: absolute;
  display: flex;
 width: 50px;
 height: 50px;
- top: 60px;
+ top: 20px;
  background-color:rgb(19, 176, 243);
  border-radius: 100%;
- margin: 1px 10px;
+ margin: 1px 25px;
  align-content: center;
  align-items: center;
  justify-content: center;
 text-align: center;
 border: 0.1em solid rgb(19, 176, 243);
 box-shadow: 0 0 3px rgb(19, 176, 243);
+background-color: rgba(116, 116, 116, 0.103);
+backdrop-filter: blur(10px);
+-webkit-backdrop-filter: blur(10px);
+border: 1px solid rgb(19, 176, 243);
+
 }
 
 div.bola1 a{ 
-
-    color: rgb(0, 0, 0);
+  font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color:rgb(19, 176, 243);
     display: flex;
     background: none;
     text-decoration: none;
     text-transform: capitalize;
-    font-size: 65px;
+    font-size: 60px;
     position: relative;
     Line-height: 0.12;
-    bottom:7px;
+    bottom: 7px;
+   
    
 }
 
 .bola1:hover {
     opacity:0.8 ;
 }
+
 div.bola2 a{
     position: absolute;
      flex-wrap: wrap;
@@ -94,10 +122,9 @@ div.bola2 a{
      display: flex;
      width: 50px;
      height: 50px;
-     top: 60px;
-     background-color:rgb(19, 176, 243);
+     top: 20px;
      border-radius: 100%;
-     margin: 1px 10px;
+     margin: 1px 25px;
      right: 0%;
      flex-direction: column;
      justify-items: center;
@@ -106,6 +133,9 @@ div.bola2 a{
      align-items: center;
      border: 0.1em solid rgb(19, 176, 243);
      box-shadow: 0 0 3px rgb(19, 176, 243);
+     backdrop-filter: blur(10px);
+-webkit-backdrop-filter: blur(10px);
+
     }
     div.bola2 div.cabeca{
         display: flex;
@@ -113,7 +143,7 @@ div.bola2 a{
         top:8px;
         left:17px;
         border-radius: 100%;
-        background: rgb(0, 0, 0);
+        background-color:rgb(19, 176, 243);
         position: absolute;
         width: 1px;
     
@@ -122,7 +152,7 @@ div.bola2 a{
         padding:8px;
         width: 30px;;
         border-radius: 100%;
-        background: rgb(0, 0, 0);
+        background-color:rgb(19, 176, 243);
         position: relative;
         top:10px;
         
@@ -140,57 +170,102 @@ div.bola2 a{
     }
 /**/
     body{
-        background-image:url(/img/fundo_relogio.jpg) ;
         background-size:cover;
         overflow-x: hidden;
+          
     }
     div.transparente{
+    
        display:flex;
         position: absolute;
-        background-color:rgb(99, 99, 99) ;
-        padding: 125px;
-        opacity: 0.5;
+        border: rgb(255, 255, 255) solid 1px;
         bottom: 5%;;
-        right: 2%;
-        left: 2%;
+        right: 3%;
+        left: 3%;
         height: 20%;
         align-items: center;
-       justify-content:space-between;
        box-shadow: 9px 9px 9px  black;
        border-radius: 9px;
        transition: 0.6s ease;
-
-     
+       background-color: rgba(116, 116, 116, 0.103);
+       backdrop-filter: blur(2px);
+       -webkit-backdrop-filter: blur(2px);
+       height: 300px;
+      justify-content:space-around;
+    }
+    div.transparente h2{
+      position: absolute;
+      top: 0;
+      left: 0;
+      
     }
 
     div.card{
-        display:grid;
-        background-image: url('/img/fundo_relogio.jpg');
-        border-radius:10px;
-        flex-grow: 1;
-        border:3px solid;
-        text-align: center;
+       font-family: 'Poppins', sans-serif;
+       border-radius:10px;
+       border:1px solid white;
+       text-align: center;
        justify-content: center;
-       margin: 1%;
-       padding: 5%;
+       margin: 2%;
        box-shadow: 9px 9px 15px black;
-    
+       width: 25%;
+       min-height:170px;
+       text-align: start;
+       margin-top: 100px;
+       margin-bottom: 20px;
+       
     }
  div.card a{
-   
-    opacity: 1.0;
-    letter-spacing: 3px;
-    font-size:30px;
+    margin-left:15px;
+    font-size:20px;
     text-decoration: none;
-    color:hsl(0, 0%, 100%);
-    text-shadow: 2px 5px 3px rgb(0, 0, 0);
- 
+    color: rgb(255, 255, 255);  
+ }
+ div.card p{
+    margin: 0 auto;
+    margin-left:15px;
+    font-size:10px;
+    text-decoration: none;
+    color: rgb(255, 255, 255);  
+    margin-top: 8px;
+    text-shadow: 0 0 5px black;
+    word-spacing:2px;
+    letter-spacing: 1.5px;
  }
  .card:hover{
-    filter:grayscale(100%);
-    transition: 0.1s ease;
-    padding: 5.2%;
+  scale: 1.01;
+  transition: 0.1s ease;
+    
  }
+ 
+
+ i{
+ font-size: 2em;
+ padding: 10px 13px;
+ border-radius: 10px;
+ margin-top: 15px;
+ margin-left: 15px;
+ margin-bottom: 15px;
+ }
+ #icon_calendario{
+  border: 1px solid rgb(7, 37, 117);
+  color: rgb(19, 176, 243);
+  background-color: rgba(7, 64, 88, 0.60);
+  box-shadow:0 0 40px rgb(7, 64, 88);
+ }
+ #icon_desempenho{
+  border: 1px solid rgb(35, 73, 3);
+  color: rgb(82, 177, 4);
+  background-color: rgba(23, 65, 39, 0.6);
+  box-shadow:0 0 40px rgba(4, 78, 32, 0.47);
+ }
+ #icon_metas{
+  border: 1px solid rgb(179, 3, 214);
+  color:rgb(179, 3, 214) ;
+  background-color: rgba(70, 23, 71, 0.6);
+  box-shadow:0 0 40px rgba(124, 6, 124, 0.479);
+ }
+
 div.menu{
 display:flex;
 position:absolute;
