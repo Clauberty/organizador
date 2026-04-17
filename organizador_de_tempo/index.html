@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0&icon_names=strategy" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title> TIMEOUT </title>
 </head>
@@ -16,7 +17,7 @@
         <a href="#" botao> Progresso </a> 
     </div>
     <div>
-        
+        <div class="fundo"></div>
     </div>
     <div id="confg" class="bola1"onclick="openNav()">
         <a href="#" class="t1" >- - -</a>
@@ -47,15 +48,19 @@
             <div class="corpo"> </div>
         </a>
 
-       <div class="fundo">
-
+       <div class="relogio-container">
+         <div id="relogio"></div>
+         <div id="data"></div>
        </div>
-<div class="filtro">
-
-</div>
+    
     </div>
 <div class="transparente">
-    <h2>Lorem ipsum dolor sit amet consectetur, adipisicing elit.</h2>
+    <div class="mensagem">
+         <h2 id="saudacao" style="color: rgb(255, 255, 255);"></h2>
+         <h2 id="frase" style="color: rgb(0, 153, 255);"></h2>
+         <p> <br><br> organize seu dia, acompanhe seu progresso e alcance seu objetivo.</p>
+    </div>
+   
     <div class="card">
         <i id="icon_calendario" class="fa-solid fa-calendar"></i>
         <br>
@@ -131,6 +136,7 @@
  <div class="quadradoRotina"></div>
 </form>
 <script src="javascript.js"></script>
+<script src="data_relogio.js"></script>
 </body>
 
 </html> 
