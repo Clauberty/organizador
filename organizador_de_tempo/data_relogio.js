@@ -7,10 +7,12 @@ function atualizarRelogio() {
         day: "2-digit",
         month: "long",
     });
-    const hora = agora.toLocaleTimeString("pt-BR", {
+    const horaFormatada = agora.toLocaleTimeString("pt-BR", {
         hour: "2-digit",
         minute: "2-digit"
     });
+    const hora = agora.getHours();
+
   let saudacao;
 
     if (hora >= 5 && hora < 12) {
@@ -24,7 +26,7 @@ function atualizarRelogio() {
     }
     document.getElementById("saudacao").textContent = saudacao;
     document.getElementById("data").textContent = data;
-    document.getElementById("relogio").textContent = hora;
+    document.getElementById("relogio").textContent = horaFormatada;
 }
 
 setInterval(atualizarRelogio, 1000);
