@@ -41,6 +41,8 @@ function openNavPerfil(){
         document.querySelector('.transparente').style.visibility="hidden";
         document.querySelector('.voltar').style.transform="translatex(0)";
         document.querySelector('.criar').style.transform="translatex(0)";
+        document.querySelector('.fundo').style.filter="brightness(90%) "
+        
         setTimeout(function(){
             document.querySelector('.quadradoRotina').style.transform="translatex(0)";
         },150);
@@ -56,6 +58,7 @@ function openNavPerfil(){
         document.querySelector('.voltar').style.transform="translatex(130%)";
         document.querySelector('.criar').style.transform="translatex(-265%)";
         document.querySelector('.quadradoRotina').style.transform="translatex(-100%)";
+        document.querySelector('.fundo').style.filter="brightness(100%) "
         setTimeout(function(){
 
             document.querySelector('.quadradoRotina').style.visibility="visible";
@@ -66,7 +69,7 @@ function openNavPerfil(){
       
        //limpar campo de criação ao preencher tudo
        document.getElementsByClassName("botao_ok")[0].addEventListener("click",function(){ 
-        document.querySelector('.criar').style.background="rgb(19, 176, 243);"
+
 
        meu_formulario=document.getElementsByClassName("criado")[0];
        var inputs = meu_formulario.querySelectorAll("input");
@@ -188,7 +191,6 @@ function openNavPerfil(){
         document.querySelector('.botao_ok').addEventListener('click',function(){
            
           
-                document.querySelector('.criar').style.background='rgb(19, 176, 243)';
 
                 
                 
